@@ -2,12 +2,11 @@ import React from 'react';
 
 const Footer = () => {
     return ( 
-        <footer className="page-footer">
-            <div className="footer-copyright">
+        <footer className="page-footer light-blue accent-3">
                 <div className="container">
-                    <a href="#!" className="brand-logo">The Movie DB</a>
+                    <a href="#!" className="black-text">The Movie DB</a>
                 </div>
-            </div>
+            
         </footer>
     );
 }
