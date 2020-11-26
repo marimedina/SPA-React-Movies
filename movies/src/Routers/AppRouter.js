@@ -4,24 +4,25 @@ import {
     Switch,
     Route
 } from 'react-router-dom';
-import Movie from '../Components/Movie';
 import MovieCard from '../Components/MovieCard';
-import Footer from '../Components/UI/Footer';
+import MoviesList from '../Components/MoviesList';
 import Header from '../Components/UI/Header';
+import Footer from '../Components/UI/Footer';
 
 
 const AppRouter = () => {
     return (
+        <>
+        <Header titulo="Movies"/>
         <Router>
-                
-
-                <Switch>
-                    <Route exact path="/:id" component={MovieCard}/>
-                    <Route exact path="/" component={Movie}/>
-                </Switch>
-
-                
+            <Switch>
+                <Route exact path="/" component={MoviesList}></Route>
+                <Route exact path="/:id" component={MovieCard}></Route>
+            </Switch>
         </Router>
+        <Footer/>
+        </>
+       
     );
 }
  
