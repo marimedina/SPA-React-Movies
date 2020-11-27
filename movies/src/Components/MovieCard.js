@@ -25,13 +25,15 @@ const MovieCard = ({match}) => {
     }, [])
 
     
-    const {backdrop_path, overview, vote_average} = infmovie;
+    const {title, backdrop_path, overview, vote_average} = infmovie;
 
     return (
+        infmovie && (
         <div>
-            <p>{overview}</p>
+            <h1>h</h1>
+            <h5>{title}</h5>
         </div>
-     
+        )
     );
     
 }
