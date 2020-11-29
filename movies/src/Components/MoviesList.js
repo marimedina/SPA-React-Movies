@@ -21,18 +21,19 @@ const MoviesList = () => {
     consultarApi();
   }, [])
     return ( 
-
-        <div> 
-            {movies && movies.map(movie => (
-            
-                <Movie
-                    key={movie.id}
-                    img={movie.backdrop_path}
-                    movie={movie}
-                />
-            ))}
-            
-        </div>
+        
+          <div> 
+              
+              {movies && movies.map(movie => (
+              
+                  <Movie
+                      key={movie.id}
+                      img={movie.backdrop_path}
+                      movie={movie}
+                  />
+              ))}
+              
+          </div>
      );
 }
  

@@ -10,24 +10,24 @@ const Movie = ({movie}) => {
     const img = `https://image.tmdb.org/t/p/w500${movie.backdrop_path}`;
 
     return ( 
-        <div className="row">
-            <div className="col s6 m5">    
-                <div className="card">
-                        <div className="card-content">
-                            <div className="card-image">
+        
+            <div className='row'>
+                <div className='col s4 m5 l4'>    
+                    <div className='card'>
+                        <div className='card-content'>
+                            <div className='card-image'>
                                 <img src={img}></img>
                             </div>
                             <h5>{title}</h5>
                             <p>{overview}</p>
                         </div>
                         <div className="card-action">
-                            <Link to={`/${id}`}>Detalle</Link>
-                            
+                            <Link to={`/${id}`} className='black-text'>Detalle</Link>  
                         </div>
-                   
+                    
+                    </div>
                 </div>
             </div>
-        </div>
     );
 }
  

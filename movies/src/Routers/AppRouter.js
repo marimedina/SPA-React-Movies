@@ -8,6 +8,7 @@ import MovieCard from '../Components/MovieCard';
 import MoviesList from '../Components/MoviesList';
 import Header from '../Components/UI/Header';
 import Footer from '../Components/UI/Footer';
+//import CardPrueba from '../Components/cardPrueba';
 
 
 const AppRouter = () => {

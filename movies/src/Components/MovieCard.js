@@ -7,7 +7,13 @@ import { Link } from 'react-router-dom';
 const MovieCard = ({match}) => {
     
     const id = match.params.id;
-    const [infmovie, guardarInfMovie] = useState([]);
+    const [movie, guardarInfMovie] = useState({
+        title: "",
+        backdrop_path: "",
+        overview: "", 
+        vote_average: ""
+    });
+
 
     useEffect( () => {
         const infmovie = async () => {
@@ -25,15 +31,15 @@ const MovieCard = ({match}) => {
     }, [])
 
     
-    const {title, backdrop_path, overview, vote_average} = infmovie;
+    //const {title, backdrop_path, overview, vote_average} = infmovie;
+    
+    
 
     return (
-        infmovie && (
         <div>
-            <h1>h</h1>
-            <h5>{title}</h5>
+            <h5>{movie.title}</h5>
         </div>
-        )
+        
     );
     
 }
