@@ -11,7 +11,6 @@ const MovieCard = ({match}) => {
     const [infmovie, guardarInfMovie] = useState({ title: "", backdrop_path: "", overview: "", vote_count: "" });
    
 
-
     useEffect( () => {
         const infmovie = async () => {
             const key = "924a9864b95ad82864661b2782823f3f"
