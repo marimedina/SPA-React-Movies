@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import Movie from './Movie';
 
 
-//LISTA DE PELICULAS
 const MoviesList = () => {
   const [movies, guardarMovies] = useState([]);
 

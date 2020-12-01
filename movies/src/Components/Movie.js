@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-//TITULO Y SINOPSIS DE CADA PELICULA
 const Movie = ({movie}) => {
 
     
@@ -21,7 +20,7 @@ const Movie = ({movie}) => {
                             <p className='ellipsis'>{overview}</p>
                         </div>
                         <div className="card-action">
-                            <Link to={`/${id}`} className='black-text'>Detalle</Link>  
+                            <Link to={`/${id}`} className='red-text'>Detalle</Link>  
                         </div>
                     
                     </div>

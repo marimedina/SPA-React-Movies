@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 
-//INFO DE X PELICULA
-
 
 const MovieCard = ({match}) => {
     
@@ -28,7 +26,7 @@ const MovieCard = ({match}) => {
     
 
 
-    const {title, poster_path, overview, vote_count} = infmovie
+    const {title, poster_path, overview, vote_count, genres} = infmovie
     const img = `https://image.tmdb.org/t/p/w500${poster_path}`
     
     
@@ -43,13 +41,15 @@ const MovieCard = ({match}) => {
                         <img src={img}></img>
                     </div>
                     <div className="card-stacked">
-                        <div className="card-content">
+                        <div className="card-content center">
                             <h4>{title}</h4>
                             <h5>{overview}</h5>
+                            <br></br>
+                            <h6>GENRES: {genres && genres.map(genres => `${genres.name}`).join(', ')}</h6>
                             <h6>POINTS: {vote_count}</h6>
                         </div>
-                        <div className="card-action">
-                            <Link to={`/${id}/actors`} className='black-text'>Actors</Link>
+                        <div className="card-action center">
+                            <Link to={`/${id}/actors`} className='red-text'>Actors</Link>
                         </div>
                     </div>
                 </div>

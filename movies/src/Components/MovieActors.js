@@ -2,9 +2,6 @@ import React, {useState, useEffect} from 'react';
 import Actors from './Actor';
 
 
-
-//VER PORQUE NO TRAE LOS ACTORES
-
 const MovieActors = ({match}) => {
 
     const id = match.params.id
