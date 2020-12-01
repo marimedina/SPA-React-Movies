@@ -46,7 +46,7 @@ const MovieCard = ({match}) => {
                         <div className="card-content">
                             <h4>{title}</h4>
                             <h5>{overview}</h5>
-                            <h6>Points: {vote_count}</h6>
+                            <h6>POINTS: {vote_count}</h6>
                         </div>
                         <div className="card-action">
                             <Link to={`/${id}/actors`} className='black-text'>Actors</Link>

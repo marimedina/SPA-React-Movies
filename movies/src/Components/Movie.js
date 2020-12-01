@@ -10,8 +10,7 @@ const Movie = ({movie}) => {
     const img = `https://image.tmdb.org/t/p/w500${movie.backdrop_path}`;
 
     return ( 
-        
-            <div className='row'>
+            
                 <div className='col s4 m5 l4'>    
                     <div className='card'>
                         <div className='card-content'>
@@ -19,7 +18,7 @@ const Movie = ({movie}) => {
                                 <img src={img}></img>
                             </div>
                             <h5>{title}</h5>
-                            <p>{overview}</p>
+                            <p className='ellipsis'>{overview}</p>
                         </div>
                         <div className="card-action">
                             <Link to={`/${id}`} className='black-text'>Detalle</Link>  
@@ -27,7 +26,7 @@ const Movie = ({movie}) => {
                     
                     </div>
                 </div>
-            </div>
+           
     );
 }
  

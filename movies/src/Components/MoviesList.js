@@ -22,7 +22,7 @@ const MoviesList = () => {
   }, [])
     return ( 
         
-          <div> 
+          <div className='row'> 
               
               {movies && movies.map(movie => (
               

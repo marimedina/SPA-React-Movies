@@ -15,7 +15,7 @@ import MovieActors from '../Components/MovieActors';
 const AppRouter = () => {
     return (
         <>
-        <Header titulo="Movies"/>
+        <Header titulo="THE MOVIES DB"/>
         <Router>
             <Switch>
                 <Route exact path="/" component={MoviesList}></Route>

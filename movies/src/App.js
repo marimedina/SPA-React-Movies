@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './Styles/style.css'
 
 import AppRouter from './Routers/AppRouter';
 
